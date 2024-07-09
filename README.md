@@ -11,11 +11,15 @@ Here is the link of the streamlit share where i have hosted it - https://predict
 
 https://github.com/ritwick-1234/predict_using_logistic_regression/assets/132933739/b4ee2bed-8c66-4581-a57b-f109f1245606
 
-## Demonstration of Prediction 
+## Demonstration of Prediction  using Logistic Regression
 
-https://github.com/ritwick-1234/predict_using_logistic_regression/assets/132933739/a02c97ba-7214-4f06-a184-b2194b911631
 
-using logistic regression
+
+
+
+
+https://github.com/ritwick-1234/predict_using_logistic_regression/assets/132933739/e26e054f-a3fd-4ff2-b784-9b0df620d83c
+
 
 
 
