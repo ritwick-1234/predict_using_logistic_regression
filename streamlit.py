@@ -142,24 +142,24 @@ def predict_diabetes(data):
     return prediction
 
 
-# Load the pre-trained model
 
 
-# Streamlit app title
+
+
 st.sidebar.title('Diabetes Prediction')
 
-# Define radio button options
+
 option = st.sidebar.radio("Select an option", ('Predict Diabetes',))
 
-# Main content area
+
 if option == 'Predict Diabetes':
     st.title('Diabetes Prediction')
 
-    # Create a form for user input
+    
     with st.form("input_form"):
         st.write("Fill in the details to predict diabetes:")
         
-        # Input fields for user to enter data
+        
         pregnancies = st.number_input("Pregnancies", min_value=0, step=1)
         glucose = st.number_input("Glucose", min_value=0)
         blood_pressure = st.number_input("BloodPressure", min_value=0)
@@ -169,11 +169,11 @@ if option == 'Predict Diabetes':
         diabetes_pedigree = st.number_input("DiabetesPedigreeFunction", min_value=0.000,step=0.0001)
         age = st.number_input("Age", min_value=0, step=1)
 
-        # Submit button to make prediction
+        
         submitted = st.form_submit_button("Predict")
 
         if submitted:
-            # Create a DataFrame from user inputs
+            
             input_data = pd.DataFrame({
                 'Pregnancies': [pregnancies],
                 'Glucose': [glucose],
@@ -185,10 +185,10 @@ if option == 'Predict Diabetes':
                 'Age': [age]
             })
 
-            # Make prediction using the model
+           
             prediction = predict_diabetes(input_data)
 
-            # Display prediction result and print
+          
             if prediction[0] == 1:
                 st.error("The person is predicted to be diabetic.")
                 st.write("Prediction: Diabetic")
